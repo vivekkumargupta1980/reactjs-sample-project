@@ -1,15 +1,27 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Header from "./Header";
+import Login from "./Login";
+import Footer from "./Footer";
 
 import "./styles.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>Hello CodeSandbox</h1>
-        <h2>Start editing to see some magic happen!</h2>
-      </div>
+      <Router>
+        <div>
+          <Header />
+          <div className="wrapper">
+            <Switch>
+              <Route path={"/"} exact component={Login} />
+            </Switch>
+          </div>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

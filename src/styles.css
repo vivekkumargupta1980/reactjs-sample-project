@@ -1,4 +1,133 @@
-.App {
-  font-family: sans-serif;
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: Lato;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cursor {
+  cursor: pointer;
+}
+html,
+body {
+  margin: 0;
+  padding: 0 0 50px 0;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 90%;
+}
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background: #2a6496;
+  padding: 25px 15px;
+  color: #fff;
+}
+.clear {
+  display: block;
+  clear: both;
+}
+.logo {
+  float: left;
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+}
+.logo a {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+}
+.navbar {
+  float: right;
+}
+.navbar ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.navbar ul li a {
+  padding: 8px;
+  color: #fff;
+  border-radius: 5px;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  background: #fff;
+  color: #2a6496;
+}
+/* Footer */
+.footer {
+  background: #353535;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+}
+
+/* wrapper */
+.wrapper {
+  padding: 15px;
+}
+h1 {
+  text-align: center;
+}
+
+/* login */
+.logincontainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #fff;
+  padding: 30px;
+  width: 300px;
+  height: 300px;
+  box-shadow: 3px 0px 4px 6px #ddd;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
+.logincontainer h1 {
+  color: #2a6496;
+}
+.form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  display: block;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+.btn {
+  padding: 8px;
+  background: #2a6496;
+  border: none;
+  color: #fff;
+  margin: 10px auto;
+}
+.loginform label {
+  color: #000;
+}
+.errorMsg {
+  color: red;
+}
+.small {
+  display: block;
+  margin-bottom: 5px;
 }
