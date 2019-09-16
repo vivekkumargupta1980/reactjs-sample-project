@@ -9,12 +9,21 @@ class Header extends Component {
       <div className="header">
         <div className="container">
           <div className="logo">
-            <img src={Logo} />
+            <img src={Logo} alt="Logo" />
           </div>
           <div className="navbar">
             <ul>
               <li>
                 <li>
+                  <li>
+                    <NavLink
+                      to="/signup"
+                      exact
+                      activeStyle={{ color: "#2a6496" }}
+                    >
+                      SignUp
+                    </NavLink>
+                  </li>
                   <NavLink to="/" exact activeStyle={{ color: "#2a6496" }}>
                     Login
                   </NavLink>

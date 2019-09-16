@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./Header";
 import Login from "./Login";
+import SignUp from "./SignUp";
 import Footer from "./Footer";
 
 import "./styles.css";
@@ -17,6 +18,7 @@ class App extends Component {
           <div className="wrapper">
             <Switch>
               <Route path={"/"} exact component={Login} />
+              <Route path={"/signup"} exact component={SignUp} />
             </Switch>
           </div>
           <Footer />

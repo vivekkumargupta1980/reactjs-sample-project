@@ -10,6 +10,8 @@ a {
   font-family: Lato;
   text-decoration: none;
   box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 ul,
 li {
@@ -28,15 +30,14 @@ body {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
 }
 .header {
-  top: 0;
-  left: 0;
-  width: 100%;
   position: fixed;
+  top: 0;
+  width: 100%;
   background: #2a6496;
-  padding: 25px 15px;
+  padding: 10px 0;
   color: #fff;
 }
 .logo {
@@ -69,13 +70,13 @@ body {
 }
 /* Footer */
 .footer {
-  background: #353535;
+  background: #2a6496;
   color: #fff;
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
+  padding: 10px 0;
 }
 
 /* wrapper */
@@ -86,13 +87,26 @@ h1 {
   text-align: center;
 }
 
+/* signup */
+.signupcontainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #fff;
+  padding: 10px;
+  width: 300px;
+  height: 500px;
+  box-shadow: 3px 0px 4px 6px #ddd;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
 /* login */
 .logincontainer {
   position: absolute;
   left: 50%;
   top: 50%;
   background: #fff;
-  padding: 30px;
+  padding: 10px;
   width: 300px;
   height: 300px;
   box-shadow: 3px 0px 4px 6px #ddd;
