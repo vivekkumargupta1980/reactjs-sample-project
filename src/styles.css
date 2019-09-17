@@ -10,8 +10,6 @@ a {
   font-family: Lato;
   text-decoration: none;
   box-sizing: border-box;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 ul,
 li {
@@ -135,6 +133,7 @@ h1 {
   color: #000;
 }
 .errorMsg {
+  display: block;
   color: red;
 }
 .small {
