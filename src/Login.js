@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
 import "./styles.css";
 
 class Login extends Component {
@@ -6,7 +7,8 @@ class Login extends Component {
     super();
     this.state = {
       user: {},
-      errors: {}
+      errors: {},
+      redirectToHome: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.OnSubmitLogin = this.OnSubmitLogin.bind(this);
@@ -26,7 +28,7 @@ class Login extends Component {
       let user = {};
       user["emailid"] = "";
       user["password"] = "";
-      this.setState({ user: user });
+      this.setState({ user: user, redirectToHome: true });
       alert("Form submitted");
     }
   }
@@ -75,6 +77,10 @@ class Login extends Component {
   }
 
   render() {
+    const redirectToHome = this.state.redirectToHome;
+    if (redirectToHome === true) {
+      return <Redirect to="/home" />;
+    }
     return (
       <div className="logincontainer">
         <h1>Login</h1>

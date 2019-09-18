@@ -17,6 +17,15 @@ class Header extends Component {
                 <li>
                   <li>
                     <NavLink
+                      to="/home"
+                      exact
+                      activeStyle={{ color: "#2a6496" }}
+                    >
+                      Home
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
                       to="/signup"
                       exact
                       activeStyle={{ color: "#2a6496" }}
@@ -24,9 +33,11 @@ class Header extends Component {
                       SignUp
                     </NavLink>
                   </li>
-                  <NavLink to="/" exact activeStyle={{ color: "#2a6496" }}>
-                    Login
-                  </NavLink>
+                  <li>
+                    <NavLink to="/" exact activeStyle={{ color: "#2a6496" }}>
+                      Login
+                    </NavLink>
+                  </li>
                 </li>
               </li>
             </ul>
